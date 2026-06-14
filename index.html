@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Dev Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <header>
+        <h1>🚀 Ultimate Dev Dashboard</h1>
+        <p>Track • Focus • Achieve</p>
+    </header>
+
+    <main class="dashboard">
+
+        
+        <section class="card" id="timer-widget">
+
+            <h2>⏰ Focus Timer</h2>
+
+            <div id="timer-display">
+                25:00
+            </div>
+
+            <div id="timer-status">
+                Status: Ready
+            </div>
+
+            <div class="btn-group">
+
+                <button id="start-btn">
+                    Start
+                </button>
+
+                <button id="pause-btn">
+                    Pause
+                </button>
+
+                <button id="resume-btn">
+                    Resume
+                </button>
+
+                <button id="reset-btn">
+                    Reset
+                </button>
+
+            </div>
+
+        </section>
+
+        
+        <section class="card" id="todo-widget">
+
+            <h2>✅ Daily Wins</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task..."
+            >
+
+            <button id="add-task-btn">
+                Add Task
+            </button>
+
+            <ul id="todo-list">
+            </ul>
+
+            <div id="progress">
+                Completed: 0/0
+            </div>
+
+        </section>
+
+        
+        <section class="card" id="motivation-widget">
+
+            <h2>💡 Motivation Center</h2>
+
+            <p id="quote">
+                Loading inspiration...
+            </p>
+
+            <button id="new-quote-btn">
+                New Quote
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="timer.js"></script>
+    <script src="todo.js"></script>
+    <script src="motivation.js"></script>
+
+</body>
+</html>

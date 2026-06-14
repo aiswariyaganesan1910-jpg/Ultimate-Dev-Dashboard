@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+.background{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(37,99,235,.35),
+        transparent 40%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(6,182,212,.35),
+        transparent 40%
+    );
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    color:#60a5fa;
+
+    text-shadow:
+    0 0 10px #2563eb,
+    0 0 20px #2563eb;
+}
+
+header p{
+    margin-top:10px;
+    color:#cbd5e1;
+    letter-spacing:2px;
+}
+
+.dashboard{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:20px;
+}
+
+.card{
+    width:350px;
+    min-height:420px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid
+    rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+    0 0 25px
+    rgba(37,99,235,.25);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 30px
+    rgba(37,99,235,.6);
+}
+
+.card h2{
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+
+
+#timer-display{
+    font-size:3.5rem;
+    text-align:center;
+    color:#38bdf8;
+    margin:25px 0;
+    font-weight:bold;
+}
+
+#timer-status{
+    text-align:center;
+    color:#22c55e;
+    margin-bottom:20px;
+}
+
+
+
+.btn-group{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+button{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+
+    background:#2563eb;
+    color:white;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 0 15px #2563eb;
+}
+
+#add-task-btn{
+    width:100%;
+    margin-top:10px;
+}
+
+
+
+input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+}
+
+
+
+#todo-list{
+    list-style:none;
+    margin-top:20px;
+}
+
+#todo-list li{
+    padding:10px;
+    margin-bottom:10px;
+
+    border-radius:10px;
+
+    background:
+    rgba(255,255,255,.06);
+}
+
+#progress{
+    margin-top:20px;
+    color:#22c55e;
+    font-weight:bold;
+}
+
+
+
+#quote{
+    margin-top:30px;
+    line-height:1.8;
+    color:#e2e8f0;
+    text-align:center;
+}
