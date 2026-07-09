@@ -188,3 +188,7 @@ input{
     color:#e2e8f0;
     text-align:center;
 }
+#new-quote-btn{
+    display: block;
+    margin: 20px auto;
+}
